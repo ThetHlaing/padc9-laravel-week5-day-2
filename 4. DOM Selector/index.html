@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>PADC Myanmar - Dom Selectors</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <!-- Change first Div's text to PADC Myanmar-->
+  <!-- Change second Div's text to Your Name-->
+  <!-- Change third Div's ul' content to the list of programming languages-->
+  <!-- Change fourth Div's ul' content to the list of dog name-->
+  <div id="first">First Div</div>
+  <div class="second">Second Div</div>
+  <div id="third">
+    <ul>
+      <li>First Node</li>
+      <li>Second Node</li>
+      <li>Third Node</li>
+    </ul>
+  </div>
+  <div>
+    <ul>
+      <li>First Node</li>
+      <li>Second Node</li>
+    </ul>
+  </div>
+  <script>
+      const firstChild =  document.querySelector("#third ul li:first-child");
+      console.log(firstChild);
+      //https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048
+      
+  </script>
+</body>
+
+</html>

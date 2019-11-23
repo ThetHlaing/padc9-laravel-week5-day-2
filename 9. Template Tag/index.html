@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PADC Myanmar - Template Tag</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+
+<body>
+
+    <!-- Add a product inside productlist view on button click-->
+
+    <nav>
+        <div class="nav-wrapper">
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <button id="add-new-button" class="waves-effect waves-light btn">Add New Card</button>
+
+    <div id="product-list" class="row">       
+
+    </div>
+    
+
+    <template id="product-template">
+            <div class="col s4 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://placekitten.com/200/200">
+                            <span class="card-title">{{card-title}}</span>
+                        </div>
+                        <div class="card-content">
+                            <p>I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">This is a link</a>
+                        </div>
+                        <script>
+                            alert("I'm inside the template")
+                        </script>
+                    </div>
+                </div>
+    </template>
+
+    <script>
+       
+       const newbutton = document.getElementById("add-new-button");
+        const templateTag = document.getElementById("product-template");
+        const productListView = document.getElementById("product-list")
+
+    </script>
+</body>
+
+</html>
