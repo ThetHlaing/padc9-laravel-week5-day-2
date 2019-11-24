@@ -17,7 +17,7 @@
     "companies": [{
         "name": "Company 1",
         "address": "Yangon",
-        "phone": 9819232
+        "phone": 09819232
       },
       {
         'name': "Company 2",

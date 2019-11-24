@@ -27,10 +27,23 @@
     </ul>
   </div>
   <script>
-      const firstChild =  document.querySelector("#third ul li:first-child");
-      console.log(firstChild);
-      //https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048
-      
+    document.querySelector("#first").innerHTML = "PADC Myanmar";
+    document.querySelector(".second").innerHTML = "My Name is here";
+    const list = document.querySelectorAll("#third ul li");
+    list.forEach(item => {
+      console.log(item)
+    });
+    
+    for (const item of list) {
+      item.innerHTML = "Some randome value here";
+    }
+
+    document.querySelectorAll("#third + div ul li")[0].innerHTML = "Dog1";
+    document.querySelectorAll("#third + div ul li")[1].innerHTML = "Dog2";
+
+    // How??
+
+    //https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048
   </script>
 </body>
 
