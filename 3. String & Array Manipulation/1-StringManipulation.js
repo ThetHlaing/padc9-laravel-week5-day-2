@@ -1,19 +1,23 @@
 
-    /*
-      *
-    * Using string methods, convert "mypadcmyanmar" to "PADC Myanmar"
-    * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
-    */
+/*
+  *
+* Using string methods, convert "mypadcmyanmar" to "PADC Myanmar"
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
+*/
 
-    const text = "mypadcmyanmar";
+const text = "mypadcmyanmar";
 
-    const padcFormatter = function (string) {
-      // Right now, the variable string === "mypadcmyanmar"
-      // Manipulate string to make it equal to "PADC Myanmar"
-      // Use Concat() and slice()
-      // Do not use string.replace();
-      // Your code goes here!
-      return string;
-    };
+const padcFormatter = function (string) {
+  // Right now, the variable string === "mypadcmyanmar"
+  // Manipulate string to make it equal to "PADC Myanmar"
+  // Use Concat() and slice()
+  // Do not use string.replace();
+  // Your code goes here!
+  const base_string = "PADC M";
+  
+  //// splice from the string
+  return base_string.concat(string.slice(7));
+};
 
-    console.log(padcFormatter(text));
+
+console.log(padcFormatter(text));
